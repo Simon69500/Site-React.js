@@ -5,6 +5,7 @@
   padding: 15px 0;
   position: fixed;
   width: 100%;
+  height: 60px;
   top: 0;
   z-index: 1000;
 }
@@ -429,6 +430,65 @@
 .map iframe {
   border: none;
   border-radius: 4px;
+}
+
+.about h1 {
+  margin-top: 70px;
+  text-align: center;
+}
+.about .about_contenair {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.accordion {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.accordion-title {
+  background-color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  text-align: left;
+  width: 80em;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
+}
+.accordion-title.active {
+  background-color: rgba(13, 110, 253, 0.1);
+  color: #0d6efd;
+}
+.accordion-title:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+.accordion-icon {
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.accordion-icon.open {
+  transform: rotate(180deg);
+}
+.accordion-icon.closed {
+  transform: rotate(0deg);
+}
+
+.accordion-content {
+  padding: 10px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
 }
 
 /*# sourceMappingURL=style.css.map */

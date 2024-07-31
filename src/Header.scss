@@ -1,0 +1,111 @@
+@import 'Variables';
+
+.header {
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  height: 60px; // Définir une hauteur explicite pour le header
+  top: 0;
+  z-index: 1000;
+
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .left-content {
+    h3 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+  }
+
+  .right-content {
+    display: flex;
+    align-items: center;
+
+    .menu {
+      display: flex;
+      gap: 20px;
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: rgba(238, 238, 238, 0.8);
+        }
+
+        &.menu_1.active,
+        &.menu_2.active,
+        &.menu_3.active,
+        &.menu_4.active,
+        &.menu_5.active {
+          background-color: #0d6efd;
+        }
+      }
+    }
+
+    .menu-burger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+
+      span {
+        background: white;
+        display: block;
+        height: 3px;
+        width: 25px;
+        border-radius: 3px;
+        transition: background 0.3s;
+      }
+    }
+  }
+}
+
+// Styles pour le menu burger
+@media (max-width: 768px) {
+  .header {
+    .right-content {
+      .menu {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 60px; // Ajustez si nécessaire en fonction de la hauteur de votre header
+        right: 20px;
+        background-color: #333;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 200px;
+
+        a {
+          padding: 10px 15px;
+          text-align: center;
+        }
+      }
+
+      .menu-burger {
+        display: flex;
+      }
+    }
+
+    .menu-active {
+      .menu {
+        display: flex;
+      }
+    }
+  }
+}

@@ -1,0 +1,143 @@
+@import 'Variables';
+
+.home {
+  .main_home {
+    .main_1 {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      padding: 100px 0;
+      text-align: center;
+      color: white;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+      }
+
+      .content {
+        position: relative;
+        z-index: 2;
+        
+      }
+    }
+    
+  }
+}
+      .content {
+        h1 {
+          font-size: 3rem;
+          margin-bottom: 10px;
+        }
+        h3 {
+          font-size: 1.5rem;
+          margin-bottom: 20px;
+        }
+        button {
+          padding: 10px 20px;
+          font-size: 1rem;
+          background-color: #007bff;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+
+          &:hover {
+            background-color: #0056b3;
+          }
+        }
+      }
+
+    .main_2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 0;
+      background-color: #f9f9f9;
+
+      .blue-line {
+        width: 100%;
+        height: 0.3%;
+        background-color: blue;
+        margin: 10px 0 20px; /* Ajustez les marges selon votre mise en page */
+      }
+
+      .main_conteneur {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        width: 90%;
+        max-width: 1200px;
+
+        .main_2_1, .main_2_2 {
+          width: 48%;
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          
+        }
+
+        h3 {
+          font-size: 1.5rem;
+          margin-bottom: 10px;
+        }
+
+        article {
+          font-size: 1rem;
+          line-height: 1.6;
+        }
+
+        .main_2_2 {
+          .competence-img {
+            width: 30%;
+            max-width: 500px;
+            height: auto;
+            margin-bottom: 20px;
+          }
+        
+          h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+          }
+        
+          .main_2_text {
+            .skill {
+              width: 30em;
+              height:auto;        
+        
+              progress {
+                width: 100%;
+                height: 1em;
+                border-radius: 10px; // Arrondir la barre de progression
+                
+                &::-webkit-progress-bar {
+                  background-color: #f3f3f3;
+                  border-radius: 10px; // Arrondir le fond de la barre de progression
+                  overflow: hidden;
+                }
+        
+                &::-webkit-progress-value {
+                  border-radius: 10px; // Arrondir la valeur de la barre de progression
+                }
+        
+                &::-moz-progress-bar {
+                  border-radius: 10px; // Arrondir la barre de progression pour Firefox
+                }
+              }
+
+            
+            }
+          }
+        }  
+      }
+     } 

@@ -1,0 +1,25 @@
+@import 'Variables';
+
+.realisation_container {
+    background-color: white;
+    margin-bottom: 1%;
+    padding: 2rem;
+  
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: $secondary-color;
+    }
+  
+    p {
+      text-align: center;
+      color: $secondary-color;
+    }
+  
+    .blue_line {
+      width: 15%;
+      height: 3px;
+      background-color: $primary-color;
+      margin: 10px auto 20px; /* Ajustez les marges selon votre mise en page */
+    }
+  }

@@ -1,0 +1,70 @@
+@import 'Variables';
+
+.blog_container {
+    background-color: white;
+    margin-bottom: 1%;
+    padding: 2rem;
+  
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: $secondary-color;
+    }
+  
+    p {
+      text-align: center;
+      color: $secondary-color;
+    }
+  
+    .blue_line {
+      width: 15%;
+      height: 3px;
+      background-color: $primary-color;
+      margin: 10px auto 20px; /* Ajustez les marges selon votre mise en page */
+    }
+  
+    .blog_cartes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px; /* Ajout d'un espacement entre les cartes */
+  
+      .card {
+        background-color: white;
+        width: 30%; /* Ajustez la largeur selon votre besoin */
+        border-radius: 5%; /* Arrondir les coins des cartes */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+  
+        .blog_carte_2 {
+          background-color: #EEE;
+          width: 100%; /* Ajustez la largeur selon votre besoin */
+          border-radius: 5%;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          text-align: center;
+        }
+  
+        .card-body {
+          padding: 1rem;
+  
+          .card-title {
+            font-size: 1.5rem;
+            color: $secondary-color;
+          }
+  
+          .card-text {
+            font-size: 1rem;
+            color: $secondary-color;
+            overflow-wrap: break-word; /* Assurez-vous que le texte revient à la ligne */
+          }
+  
+          .btn-primary {
+            color: white;
+            background-color: $primary-color;
+            border-color: $primary-color;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }

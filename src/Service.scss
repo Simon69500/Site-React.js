@@ -1,0 +1,66 @@
+@import 'Variables';
+
+.services-img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .services_container {
+    background-color: white;
+    margin-bottom: 1%;
+    padding: 2rem;
+    
+    .icon {
+      color: $primary-color;
+      
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: $secondary-color;
+    }
+  
+    p {
+      text-align: center;
+      color: $secondary-color;
+    }
+  
+    .blue_line {
+      width: 15%;
+      height: 3px;
+      background-color: $primary-color;
+      margin: 10px auto 20px; /* Ajustez les marges selon votre mise en page */
+    }
+  
+    .service_cartes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px; /* Ajout d'un espacement entre les cartes */
+  
+      .service_carte {
+        background-color: #EEE;
+        width: 30%; /* Ajustez la largeur selon votre besoin */
+        padding: 1rem;
+        border-radius: 5%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+  
+        h2 {
+          font-size: 1.5rem;
+          color: $secondary-color;
+        }
+        
+        p {
+          font-size: 1rem;
+          color: $secondary-color;
+          overflow-wrap: break-word; /* Assurez-vous que le texte revient à la ligne */
+        }
+
+        .icon {
+          color: $primary-color;
+        }
+      }
+    }
+  }

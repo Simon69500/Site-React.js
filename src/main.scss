@@ -1,98 +1,14 @@
-// Importation de l'image
-$heroBg: "../assets/hero-bg.jpg";
+@import 'Header';
+@import 'Footer';
 
-.home {
-  background-color: #EEE ;
-}
+@import 'Home';
+@import 'Service';
+@import 'Realisation';
+@import 'Blog';
+@import 'Contact';
+@import 'About';
+@import 'Accordion';
 
-.header {
-    background-color: #333;
-    padding: 10px;
-    color: white;
-  
-    .flex-container {
-      display: flex;
-      justify-content: space-between; // Espacement des éléments à gauche et à droite
-      align-items: center; // Centrage vertical des éléments
-  
-      .menu {
-        display: flex; // Afficher les liens horizontalement
-  
-        a {
-          color: white;
-          text-decoration: none;
-          padding: 10px;
-        }
-      }
-  
-      .left-content {
-        flex: 1; // Prendre autant d'espace que possible
-        text-align: left; // Aligner le contenu à gauche
-      }
+@import 'Variables';
+@import 'mixins';
 
-      .right-content {
-        padding-right: 5%;
-      }
-    }
-  }
-  
-  .main_home {
-    .main_1 {
-      height: 25em; // Ajustez selon vos besoins
-
-      background-size: cover; // Utilisation de 'cover' pour couvrir entièrement l'élément
-     background-position: center;
-     background-repeat: no-repeat;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     color: white;
-     text-align: center;
-     padding: 20px;
-    }
-    .content {
-      background-color: rgba(0, 0, 0, 0.6); // Fond semi-transparent pour contraste
-      padding: 20px;
-      border-radius: 8px; // Bordures arrondies
-      max-width: 600px; // Largeur maximale du contenu
-    }
-  
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-  
-    h3 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-    }
-  
-    p {
-      font-size: 1rem;
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
-  
-    button {
-      background-color: #007bff;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      font-size: 1rem;
-      cursor: pointer;
-    }  
-    
-    .main_2 {
-      background-color: #EEE;
-      display: flex;
-
-      .main_2_1 {
-        border: 5% solid  #000000;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-
-      }
-    }
-  }

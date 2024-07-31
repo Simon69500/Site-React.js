@@ -1,0 +1,52 @@
+.accordion {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 10px 0;
+  }
+  
+  .accordion-title {
+    background-color:white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
+    width: 80em;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+  
+    // Styles pour l'état actif (sélectionné)
+    &.active {
+      background-color: rgba(13, 110, 253, 0.1); // Bleu avec transparence
+      color: #0d6efd; // Changer la couleur du texte si souhaité
+    }
+  
+    &:hover {
+      background-color: #0d6efd;
+      color: #fff; // Change la couleur du texte lorsque l'onglet est survolé
+    }
+  }
+  
+  .accordion-icon {
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+  
+    &.open {
+      transform: rotate(180deg);
+    }
+  
+    &.closed {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .accordion-content {
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+  }
+  

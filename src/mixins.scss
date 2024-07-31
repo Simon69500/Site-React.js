@@ -1,0 +1,56 @@
+@import 'Variables';
+
+// Définir les breakpoints
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+// Mixin pour media queries
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: $breakpoint-mobile) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media (max-width: $breakpoint-tablet) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media (max-width: $breakpoint-desktop) {
+      @content;
+    }
+  }
+}
+
+// Styles pour le menu burger
+@media (max-width: 768px) {
+    .header {
+      .right-content {
+        .menu {
+          display: none;
+          flex-direction: column;
+          gap: 0;
+          position: absolute;
+          top: 60px; // ajuster en fonction de la hauteur de votre header
+          right: 20px;
+          background-color: #dd0f0f;
+          padding: 10px;
+          border-radius: 5px;
+          box-shadow: 0 4px 8px rgba(89, 60, 192, 0.1);
+          width: 200px;
+  
+          &.active {
+            display: flex;
+          }
+  
+          a {
+            padding: 10px 15px;
+          }
+        }
+  
+        .menu-burger {
+          display: flex;
+        }
+      }
+    }
+  }
